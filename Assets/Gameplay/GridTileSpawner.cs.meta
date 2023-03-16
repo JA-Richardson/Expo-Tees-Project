@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f75a775c0f111554eb2c6b51d90875f0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - TileClass: {fileID: 2766844987106959193, guid: 8438f02d90bb2464ebc5e689086a4f87, type: 3}
+  - WallClass: {fileID: 5000804175234902841, guid: 40674633e8ab37f4e85cb264866736b2, type: 3}
+  - TurretClass: {fileID: 4681624046367494400, guid: 62d8b487c1d68df4abe84e946cbfd99a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
