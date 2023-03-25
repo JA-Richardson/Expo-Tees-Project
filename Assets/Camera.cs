@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-    public Transform cameraTransform;
+    Transform cameraTransform;
 
     public float normalSpeed;
     public float fastSpeed;
@@ -22,6 +22,11 @@ public class Camera : MonoBehaviour
     public Vector3 dragCurrent;
     public Vector3 rotStart;
     public Vector3 rotCurrent;
+
+    private void Awake()
+    {
+        cameraTransform = UnityEngine.Camera.main.transform;
+    }
     // Start is called before the first frame update
     void Start()
     {
