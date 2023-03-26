@@ -23,6 +23,11 @@ public class Camera : MonoBehaviour
     public Vector3 rotStart;
     public Vector3 rotCurrent;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        cameraTransform = UnityEngine.Camera.main.transform;
+    }
     void Start()
     {
         newPos = transform.position;
