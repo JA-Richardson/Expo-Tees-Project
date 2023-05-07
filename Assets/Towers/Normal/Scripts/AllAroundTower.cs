@@ -6,8 +6,6 @@ public class AllAroundTower : BaseTowerCode
 {
     private void Awake()
     {
-        AttackPower = 25;
-        AttackSpeed = 5f;
-        TowerRange = 20;
+        TowerSetup(25, 5f, 20);
     }
 }

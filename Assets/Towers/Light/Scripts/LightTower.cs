@@ -6,8 +6,6 @@ public class LightTower : BaseTowerCode
 {
     private void Awake()
     {
-        AttackPower = 10;
-        AttackSpeed = 2f;
-        TowerRange = 15;
+        TowerSetup(10, 2f, 15);
     }
 }
