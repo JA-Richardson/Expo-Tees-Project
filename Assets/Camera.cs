@@ -29,10 +29,10 @@ public class Camera : MonoBehaviour
     }
     // Start is called before the first frame update
 
-    private void Awake()
-    {
-        cameraTransform = UnityEngine.Camera.main.transform;
-    }
+    //private void Awake()
+    //{
+    //    cameraTransform = UnityEngine.Camera.main.transform;
+    //}
     void Start()
     {
         newPos = transform.position;
