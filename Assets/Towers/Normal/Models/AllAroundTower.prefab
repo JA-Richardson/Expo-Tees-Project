@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 289822330021957328}
   - component: {fileID: 1797201354169427292}
   - component: {fileID: 3686608611591994169}
+  - component: {fileID: 5693481828357303830}
   m_Layer: 6
   m_Name: AllAroundTower
   m_TagString: Untagged
@@ -103,3 +104,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   EnemiesInRange: 0
+--- !u!65 &5693481828357303830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570953528689718432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
