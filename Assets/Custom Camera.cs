@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CustomCamera : MonoBehaviour
 {
     Transform cameraTransform;
 
