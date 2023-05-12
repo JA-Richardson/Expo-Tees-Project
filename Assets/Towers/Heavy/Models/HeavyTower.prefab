@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7672138565427674577}
   - component: {fileID: 7066717829477560521}
   - component: {fileID: 6996483451413656137}
+  - component: {fileID: -3036576707409044940}
   m_Layer: 6
   m_Name: HeavyTower
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5361100024134823175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 108.7, z: 0}
   m_LocalScale: {x: 50, y: 133.33333, z: 50}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -103,3 +104,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   EnemiesInRange: 0
+--- !u!65 &-3036576707409044940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5361100024134823175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

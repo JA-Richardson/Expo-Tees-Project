@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7723321306257464112}
   - component: {fileID: 882686489740354938}
   - component: {fileID: 8470229281200754738}
+  - component: {fileID: 6359782161428305876}
   m_Layer: 6
   m_Name: LightTower
   m_TagString: Untagged
@@ -103,3 +104,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   EnemiesInRange: 0
+--- !u!65 &6359782161428305876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2810889676737399222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
