@@ -8,4 +8,15 @@ public class HeavyTower : BaseTowerCode
     {
         TowerSetup(50, 10f, 50);
     }
+
+    private void Update()
+    {
+        if (EnemiesInRange)
+        {
+            if (AttackOffCooldown())
+            {
+                Attack();
+            }
+        }
+    }
 }

@@ -8,4 +8,14 @@ public class LightTower : BaseTowerCode
     {
         TowerSetup(10, 2f, 15);
     }
+    private void Update()
+    {
+        if (EnemiesInRange)
+        {
+            if (AttackOffCooldown())
+            {
+                Attack();
+            }
+        }
+    }
 }

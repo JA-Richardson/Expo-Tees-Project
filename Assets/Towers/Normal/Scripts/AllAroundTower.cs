@@ -8,4 +8,15 @@ public class AllAroundTower : BaseTowerCode
     {
         TowerSetup(25, 5f, 20);
     }
+
+    private void Update()
+    {
+        if (EnemiesInRange)
+        {
+            if (AttackOffCooldown())
+            {
+                Attack();
+            }
+        }
+    }
 }
