@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8934a3a13cfb4b445867974e2a31358e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  Speed: 0
+  Power: 0
   target: {fileID: 0}
 --- !u!195 &1954459827588182060
 NavMeshAgent:
