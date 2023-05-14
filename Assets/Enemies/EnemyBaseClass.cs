@@ -5,26 +5,38 @@ using UnityEngine.AI;
 
 public class EnemyBaseClass : MonoBehaviour
 {
-    int MaxHealth = 100;
-    int Health;
+    public int Health;
+    public int Speed;
+    public int Power;
     public Transform target;
     NavMeshAgent agent;
 
-    private void Awake()
+    private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        Health = MaxHealth;
 
         agent.SetDestination(target.position);
+        agent.speed = Speed;
     }
 
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        if(Health < 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    protected void SetUpEnemy(int health, int speed, int power)
+    {
+        Health = health;
+        Speed = speed;
+        Power = power;
     }
 }
