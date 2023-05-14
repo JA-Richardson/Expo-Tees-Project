@@ -16,6 +16,11 @@ public class BaseTowerCode : MonoBehaviour
     public float VisAngle = 360f;
     public string enemyTag = "Enemy";
 
+    public AudioSource audioSource;
+    public AudioClip towerSound;
+
+    public float volume = 0.5f;
+
     //Attacks enemies in tower range.
     public virtual void Updateloop()
     {
@@ -124,6 +129,7 @@ public class BaseTowerCode : MonoBehaviour
 
     protected void Attack()
     {
+        audioSource.PlayOneShot(towerSound, volume);
         Target.TakeDamage(AttackPower);
         EndOfAttackCooldown = Time.time + AttackSpeed;
     }

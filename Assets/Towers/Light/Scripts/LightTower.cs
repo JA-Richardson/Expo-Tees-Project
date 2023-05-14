@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class LightTower : BaseTowerCode
 {
+    
+
     private void Awake()
     {
+        
         TowerSetup(10, 2f, 50);
     }
     private void Update()
@@ -14,6 +17,7 @@ public class LightTower : BaseTowerCode
         {
             if (AttackOffCooldown())
             {
+                
                 Attack();
             }
         }
