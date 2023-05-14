@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public int playerScore = 0;
     public int howManyCards = 3;
+    public TextMeshProUGUI waveNumber;
+    public int roundNumber = 1;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -102,6 +105,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        waveNumber.text = roundNumber.ToString();
     }
+
+
+    public bool CheckRoundEnded()
+    {
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }

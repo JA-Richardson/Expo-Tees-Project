@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3811936477758986439}
   - component: {fileID: 668572004846527136}
   - component: {fileID: 1954459827588182060}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LightEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,6 @@ MonoBehaviour:
   Health: 0
   Speed: 0
   Power: 0
-  target: {fileID: 0}
 --- !u!195 &1954459827588182060
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -85,7 +84,7 @@ GameObject:
   - component: {fileID: 6902287633310513780}
   - component: {fileID: 4874510601197357996}
   - component: {fileID: 5824245489321388867}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

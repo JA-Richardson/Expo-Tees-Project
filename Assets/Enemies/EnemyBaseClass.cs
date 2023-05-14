@@ -8,13 +8,13 @@ public class EnemyBaseClass : MonoBehaviour
     public int Health;
     public int Speed;
     public int Power;
-    public Transform target;
+    Transform target;
     NavMeshAgent agent;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
+        target = GameObject.FindGameObjectWithTag("Base").transform;
         agent.SetDestination(target.position);
         agent.speed = Speed;
     }

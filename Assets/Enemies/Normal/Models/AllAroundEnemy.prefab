@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 126354731987831922}
   - component: {fileID: 1761132975803292863}
   - component: {fileID: 6200030737843996980}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,9 +125,9 @@ GameObject:
   - component: {fileID: 6880733247219010182}
   - component: {fileID: 3046829469089768891}
   - component: {fileID: 5850969120173817968}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AllAroundEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,4 +182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6857245fa60876747bd723614434c3bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  Health: 0
+  Speed: 0
+  Power: 0
