@@ -5,15 +5,16 @@ using static UnityEngine.GraphicsBuffer;
 
 public class BaseTowerCode : MonoBehaviour
 {
-    protected int AttackPower;
-    protected float AttackSpeed;
-    protected float EndOfAttackCooldown;
-    protected int TowerRange;
-    protected EnemyBaseClass Target;
+    public int AttackPower;
+    public float AttackSpeed;
+    public float EndOfAttackCooldown;
+    public int TowerRange;
+    public EnemyBaseClass Target;
     public LayerMask TargetLayer;
     public LayerMask Obstructions;
     public bool EnemiesInRange;
-    float VisAngle = 360f;
+    public float VisAngle = 360f;
+    public string enemyTag = "Enemy";
 
     //Attacks enemies in tower range.
     public virtual void Updateloop()
@@ -28,7 +29,7 @@ public class BaseTowerCode : MonoBehaviour
     }
 
     //Makes the thing that I don't have a clue turn like it was on update.
-    private void Awake()
+    private void Start()
     {
         StartCoroutine(FOV_Run());
     }
@@ -47,9 +48,30 @@ public class BaseTowerCode : MonoBehaviour
         }
     }
 
+    private void UpdateTarget()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        float shortestDistance = Mathf.Infinity;
+        GameObject nearestEnemy = null;
+        Debug.Log("Started Update Target");
+        foreach (GameObject enemy in enemies)
+        {
+            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance)
+            {
+                shortestDistance = distanceToEnemy;
+                nearestEnemy = enemy;
+            }
+        }
+
+        Target = nearestEnemy.GetComponent<EnemyBaseClass>();
+    }
+
+
     //Looks for enemies in towers range
     private void FOV_Check()
     {
+        
         Collider[] Vision = Physics.OverlapSphere(transform.position, TowerRange, TargetLayer);
         if (Vision.Length != 0)
         {
@@ -64,7 +86,7 @@ public class BaseTowerCode : MonoBehaviour
                 {
                     print("Passed if 2");
                     EnemiesInRange = true;
-                    Target = Vision[0].gameObject.GetComponent<EnemyBaseClass>();
+                    UpdateTarget();
                 }
                 else
                 {

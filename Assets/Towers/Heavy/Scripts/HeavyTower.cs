@@ -6,7 +6,7 @@ public class HeavyTower : BaseTowerCode
 {
     private void Awake()
     {
-        TowerSetup(50, 10f, 50);
+        TowerSetup(50, 10f, 100);
     }
 
     private void Update()
