@@ -9,6 +9,7 @@ TagManager:
   - Base
   - Test Wall
   - Follow
+  - Enemy
   layers:
   - Default
   - TransparentFX

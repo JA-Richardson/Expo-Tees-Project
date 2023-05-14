@@ -27,6 +27,10 @@ public class EnemyBaseClass : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        if(Health < 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     protected void SetUpEnemy(int health, int speed, int power)

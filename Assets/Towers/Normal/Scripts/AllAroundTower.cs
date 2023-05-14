@@ -6,7 +6,7 @@ public class AllAroundTower : BaseTowerCode
 {
     private void Awake()
     {
-        TowerSetup(25, 5f, 20);
+        TowerSetup(25, 5f, 75);
     }
 
     private void Update()

@@ -6,7 +6,7 @@ public class LightTower : BaseTowerCode
 {
     private void Awake()
     {
-        TowerSetup(10, 2f, 15);
+        TowerSetup(10, 2f, 50);
     }
     private void Update()
     {

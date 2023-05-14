@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
+    public int howManyCards = 3;
+
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -46,6 +48,11 @@ public class GameManager : MonoBehaviour
     {
         handOfCards.RemoveAt(slot);
         handOfCards.Insert(slot, Random.Range(0, 3));
+    }
+
+    public void removeSlot()
+    {
+
     }
 
     public int showCurrentCard()
