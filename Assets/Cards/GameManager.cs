@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int howManyCards = 3;
     public TextMeshProUGUI waveNumber;
     public int roundNumber = 1;
+    public bool noCardsLeft = false;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
     public void useCard(int slot)
     {
         handOfCards.RemoveAt(slot);
-        handOfCards.Insert(slot, Random.Range(0, 3));
+        handOfCards.Insert(slot, Random.Range(0, 3));       
     }
 
     public int showCurrentCard()
@@ -101,6 +102,15 @@ public class GameManager : MonoBehaviour
             handOfCards.Add(Random.Range(0, 3));
         }
     }
+
+    public void NewCards()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            handOfCards.Add(Random.Range(0, 3));
+        }
+    }
+
 
     // Update is called once per frame
     void Update()

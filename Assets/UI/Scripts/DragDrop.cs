@@ -73,7 +73,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         }
         else if (GameManager.Instance.howManyCards <= 0)
         {
-            Destroy(gameObject);
+            gameObject.GetComponent<CardScript>().Slot = 0;
         }
     }
 }

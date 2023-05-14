@@ -12,6 +12,7 @@ public class CardScript : MonoBehaviour
     public Sprite LightCard;
 
     public int Slot;
+    public int activeSlot;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,10 @@ public class CardScript : MonoBehaviour
                 case 2:
                     blankImage.sprite = HeavyCard;
                     break;
+
+                case 3:
+                    blankImage.sprite = null;
+                    break;
             }
         }
         else if (Slot == 5)
@@ -59,7 +64,15 @@ public class CardScript : MonoBehaviour
                 case 2:
                     blankImage.sprite = LightCard;
                     break;
+
+                case 3:
+                    blankImage.sprite = null;
+                    break;
             }
+        }
+        if(GameManager.Instance.CheckRoundEnded())
+        {
+            Slot = activeSlot;
         }
     }
 }

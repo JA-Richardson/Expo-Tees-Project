@@ -44,6 +44,7 @@ public class SpawnerScript : MonoBehaviour
             AmountOfEnemiesToSpawn += 2;
             coolDown -= 1;
             newRound = true;
+            GameManager.Instance.NewCards();
         }
     }
 }
