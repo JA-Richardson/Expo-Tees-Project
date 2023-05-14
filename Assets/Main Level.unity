@@ -709,6 +709,7 @@ MonoBehaviour:
   howManyCards: 3
   waveNumber: {fileID: 1170490046}
   roundNumber: 1
+  noCardsLeft: 0
 --- !u!1 &390504242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1226,7 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   Slot: 1
+  grid: {fileID: 1024513487}
 --- !u!114 &729892222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1280,6 +1282,7 @@ MonoBehaviour:
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
   Slot: 1
+  activeSlot: 1
 --- !u!1 &778997037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,6 +1630,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936533438}
   m_CullTransparentMesh: 1
+--- !u!1 &1024513486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1024513488}
+  - component: {fileID: 1024513487}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1024513487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024513486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e912d2e7f5d694cad751681708e738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellSize: 20
+  gridSize: {x: 20, y: 20}
+--- !u!4 &1024513488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024513486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 338, y: 107, z: -40.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028455255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,6 +1889,7 @@ MonoBehaviour:
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
   Slot: 2
+  activeSlot: 2
 --- !u!114 &1146304895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1856,6 +1906,7 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   Slot: 2
+  grid: {fileID: 1024513487}
 --- !u!114 &1146304896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,6 +2215,7 @@ MonoBehaviour:
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
   Slot: 3
+  activeSlot: 3
 --- !u!114 &1224055127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2180,6 +2232,7 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   Slot: 3
+  grid: {fileID: 1024513487}
 --- !u!114 &1224055128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2756,6 +2809,7 @@ MonoBehaviour:
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
   Slot: 4
+  activeSlot: 4
 --- !u!114 &1649393919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2772,6 +2826,7 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   Slot: 4
+  grid: {fileID: 1024513487}
 --- !u!114 &1649393920
 MonoBehaviour:
   m_ObjectHideFlags: 0

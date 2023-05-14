@@ -11,7 +11,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     private bool isPositionValid;
     private int terrainLayer;
     public int Slot;
-
+    public Grid grid;
     void Start()
     {
         terrainLayer = LayerMask.GetMask("Terrain"); 
@@ -48,9 +48,17 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, terrainLayer))
         {
             turretInstance.transform.position = hit.point;
-            BoxCollider turretCollider = turretInstance.GetComponent<BoxCollider>();
-            Collider[] colliders = Physics.OverlapBox(turretInstance.transform.position, turretCollider.bounds.extents, turretInstance.transform.rotation, LayerMask.GetMask("Tower"));
-            isPositionValid = colliders.Length == 1;
+            Vector3 gridPosition = grid.WorldToGridPosition(hit.point);
+            if (grid.IsPositionInGrid(gridPosition) && !grid.IsCellOccupied(gridPosition))
+            {
+                turretInstance.transform.position = gridPosition;
+                isPositionValid = true;
+            }
+            else
+            {
+                turretInstance.transform.position = hit.point + Vector3.up * 50;
+                isPositionValid = false;
+            }
         }
     }
 
@@ -58,6 +66,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (isPositionValid)
         {
+            grid.SetCellOccupied(turretInstance.transform.position, true);
             turretInstance = null;
         }
         else
