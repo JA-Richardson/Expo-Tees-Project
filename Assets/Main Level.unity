@@ -628,6 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4c336a372bad04295611b342ab8897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScore: 0
   howManyCards: 3
 --- !u!1 &390504242
 GameObject:
@@ -796,6 +797,7 @@ GameObject:
   - component: {fileID: 569774892}
   - component: {fileID: 569774894}
   - component: {fileID: 569774893}
+  - component: {fileID: 569774895}
   m_Layer: 5
   m_Name: Game Score
   m_TagString: Untagged
@@ -843,7 +845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -920,6 +922,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569774891}
   m_CullTransparentMesh: 1
+--- !u!114 &569774895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569774891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e291a4d2c64b8aa4d9bac7cca2ddb594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &613457797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +3289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1950362492
 RectTransform:
   m_ObjectHideFlags: 0
