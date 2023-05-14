@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    public int playerScore = 0;
     public int howManyCards = 3;
 
     private static GameManager _instance;
@@ -28,31 +28,11 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
 
-    public void nextCard()
-    {
-        if (currentCardHeld < handOfCards.Count - 1)
-        {
-            currentCardHeld++;
-        }
-    }
-
-    public void previousCard()
-    {
-        if (currentCardHeld > 0)
-        {
-            currentCardHeld--;
-        }
-    }
 
     public void useCard(int slot)
     {
         handOfCards.RemoveAt(slot);
         handOfCards.Insert(slot, Random.Range(0, 3));
-    }
-
-    public void removeSlot()
-    {
-
     }
 
     public int showCurrentCard()
