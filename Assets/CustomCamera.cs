@@ -53,7 +53,7 @@ public class CustomCamera : MonoBehaviour
         {
             newZoom += Input.mouseScrollDelta.y * zoomAmount;
         }
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(1))
         {
             Plane plane = new Plane(Vector3.up, Vector3.zero);
             Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -63,7 +63,7 @@ public class CustomCamera : MonoBehaviour
                 dragStart = ray.GetPoint(entry);
             }
         }
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(1))
         {
             Plane plane = new Plane(Vector3.up, Vector3.zero);
             Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -74,18 +74,18 @@ public class CustomCamera : MonoBehaviour
                 newPos = transform.position + dragStart - dragCurrent;
             }
         }
-        if(Input.GetMouseButtonDown(2))
-        {
-            rotStart = Input.mousePosition;
-        }
-        if (Input.GetMouseButton(2))
-        {
-            rotCurrent = Input.mousePosition;
-            Vector3 rotDiff = rotStart - rotCurrent;
-            rotStart = rotCurrent;
+        //if(Input.GetMouseButtonDown(2))
+        //{
+        //    rotStart = Input.mousePosition;
+        //}
+        //if (Input.GetMouseButton(2))
+        //{
+        //    rotCurrent = Input.mousePosition;
+        //    Vector3 rotDiff = rotStart - rotCurrent;
+        //    rotStart = rotCurrent;
 
-            newRot *= Quaternion.Euler(Vector3.up * (-rotDiff.x / 5f));
-        }
+        //    newRot *= Quaternion.Euler(Vector3.up * (-rotDiff.x / 5f));
+        //}
     }
     
     void KeyboardInputHandler()
