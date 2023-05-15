@@ -24,6 +24,12 @@ public class Grid : MonoBehaviour
         int z = Mathf.FloorToInt((worldPosition.z - transform.position.z) / cellSize);
         return new Vector2Int(x, z);
     }
+    public Vector3 CellToWorld(Vector2Int cell)
+    {
+        float x = (cell.x * cellSize) + transform.position.x;
+        float z = (cell.y * cellSize) + transform.position.z;
+        return new Vector3(x, 0, z); 
+    }
     public bool IsCellOccupied(Vector3 worldPosition)
     {
         Vector2Int cell = WorldToCell(worldPosition);
