@@ -6,6 +6,8 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public GameObject lightTurretPrefab;
     public GameObject heavyTurretPrefab;
     public GameObject normalTurretPrefab;
+    public GameObject standardWallPrefab;
+
     public GameObject[] wallPrefabs;
     private GameObject turretPrefab;
     private GameObject turretInstance;
@@ -32,6 +34,10 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
             case 2:
                 turretPrefab = heavyTurretPrefab;
+                break;
+
+            case 3:
+                turretPrefab = standardWallPrefab;
                 break;
         }
     }

@@ -10,6 +10,7 @@ public class CardScript : MonoBehaviour
     public Sprite NormalCard;
     public Sprite HeavyCard;
     public Sprite LightCard;
+    public Sprite WallCard;
 
     public int Slot;
     public int activeSlot;
@@ -45,7 +46,7 @@ public class CardScript : MonoBehaviour
                     break;
 
                 case 3:
-                    blankImage.sprite = null;
+                    blankImage.sprite = WallCard;
                     break;
             }
         }
@@ -66,7 +67,7 @@ public class CardScript : MonoBehaviour
                     break;
 
                 case 3:
-                    blankImage.sprite = null;
+                    blankImage.sprite = WallCard;
                     break;
             }
         }

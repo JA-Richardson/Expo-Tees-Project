@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -919,6 +919,7 @@ MonoBehaviour:
   lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   wallPrefabs:
   - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
   - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
@@ -983,6 +984,7 @@ MonoBehaviour:
   NormalCard: {fileID: 21300000, guid: 5aeb8ff757436b047a7070346680e1a5, type: 3}
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
+  WallCard: {fileID: 21300000, guid: 5304b39a1a5277141a7bf5bb42d83892, type: 3}
   Slot: 1
   activeSlot: 1
 --- !u!1 &778997037
@@ -1414,6 +1416,7 @@ MonoBehaviour:
   NormalCard: {fileID: 21300000, guid: 5aeb8ff757436b047a7070346680e1a5, type: 3}
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
+  WallCard: {fileID: 21300000, guid: 5304b39a1a5277141a7bf5bb42d83892, type: 3}
   Slot: 2
   activeSlot: 2
 --- !u!114 &1146304895
@@ -1431,6 +1434,7 @@ MonoBehaviour:
   lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   wallPrefabs:
   - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
   - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
@@ -1670,6 +1674,7 @@ MonoBehaviour:
   NormalCard: {fileID: 21300000, guid: 5aeb8ff757436b047a7070346680e1a5, type: 3}
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
+  WallCard: {fileID: 21300000, guid: 5304b39a1a5277141a7bf5bb42d83892, type: 3}
   Slot: 3
   activeSlot: 3
 --- !u!114 &1224055127
@@ -1687,6 +1692,7 @@ MonoBehaviour:
   lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   wallPrefabs:
   - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
   - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
@@ -2006,6 +2012,7 @@ MonoBehaviour:
   NormalCard: {fileID: 21300000, guid: 5aeb8ff757436b047a7070346680e1a5, type: 3}
   HeavyCard: {fileID: 21300000, guid: a943f880bb7cd974484b08623e1854d6, type: 3}
   LightCard: {fileID: 21300000, guid: aa109ea1a78ee29479e7e6f0afe7348d, type: 3}
+  WallCard: {fileID: 21300000, guid: 5304b39a1a5277141a7bf5bb42d83892, type: 3}
   Slot: 4
   activeSlot: 4
 --- !u!114 &1649393919
@@ -2023,6 +2030,7 @@ MonoBehaviour:
   lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   wallPrefabs:
   - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
   - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
