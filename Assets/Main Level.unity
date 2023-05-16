@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465791, g: 0.49641317, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7464,14 +7464,6 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
-  wallPrefabs:
-  - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
-  - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
-  - {fileID: 460207090932539890, guid: c882fdffe534a8a47bd06754c0fab756, type: 3}
-  - {fileID: 1295439092551203737, guid: a7cd11ac6642fea4d92a2f62b9a9681f, type: 3}
-  - {fileID: 8428232871397883590, guid: b0d6bfff6c905af498bc62388e38a159, type: 3}
-  - {fileID: 6868792755218884013, guid: 7261acb51a35ac844920b4b4554b6aa6, type: 3}
-  - {fileID: 8919269142913034796, guid: a1d820571b3baee499c949ac6cd665fc, type: 3}
   Slot: 1
   grid: {fileID: 1024513487}
 --- !u!114 &729892222
@@ -8992,15 +8984,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879663431}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 556.6, y: 915, z: -157}
+  m_LocalRotation: {x: 0.014880862, y: -0, z: -0, w: 0.9998893}
+  m_LocalPosition: {x: 556.6, y: 905.9891, z: -162.91748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 272371078}
   m_Father: {fileID: 0}
   m_RootOrder: 39
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.705, y: 0, z: 0}
 --- !u!1001 &880887809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11148,6 +11140,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellSize: 20
   gridSize: {x: 20, y: 20}
+  prefab: {fileID: 5417928486187800539, guid: 35533aad9b64a4641affd54b69b5167a, type: 3}
+  cell: {x: 10, y: 15}
+  wallPrefabs:
+  - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
+  - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
+  - {fileID: 460207090932539890, guid: c882fdffe534a8a47bd06754c0fab756, type: 3}
+  - {fileID: 1295439092551203737, guid: a7cd11ac6642fea4d92a2f62b9a9681f, type: 3}
+  - {fileID: 8428232871397883590, guid: b0d6bfff6c905af498bc62388e38a159, type: 3}
+  - {fileID: 6868792755218884013, guid: 7261acb51a35ac844920b4b4554b6aa6, type: 3}
+  - {fileID: 8919269142913034796, guid: a1d820571b3baee499c949ac6cd665fc, type: 3}
+  towerDataList: []
 --- !u!4 &1024513488
 Transform:
   m_ObjectHideFlags: 0
@@ -11812,14 +11815,6 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
-  wallPrefabs:
-  - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
-  - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
-  - {fileID: 460207090932539890, guid: c882fdffe534a8a47bd06754c0fab756, type: 3}
-  - {fileID: 1295439092551203737, guid: a7cd11ac6642fea4d92a2f62b9a9681f, type: 3}
-  - {fileID: 8428232871397883590, guid: b0d6bfff6c905af498bc62388e38a159, type: 3}
-  - {fileID: 6868792755218884013, guid: 7261acb51a35ac844920b4b4554b6aa6, type: 3}
-  - {fileID: 8919269142913034796, guid: a1d820571b3baee499c949ac6cd665fc, type: 3}
   Slot: 2
   grid: {fileID: 1024513487}
 --- !u!114 &1146304896
@@ -12724,14 +12719,6 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
-  wallPrefabs:
-  - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
-  - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
-  - {fileID: 460207090932539890, guid: c882fdffe534a8a47bd06754c0fab756, type: 3}
-  - {fileID: 1295439092551203737, guid: a7cd11ac6642fea4d92a2f62b9a9681f, type: 3}
-  - {fileID: 8428232871397883590, guid: b0d6bfff6c905af498bc62388e38a159, type: 3}
-  - {fileID: 6868792755218884013, guid: 7261acb51a35ac844920b4b4554b6aa6, type: 3}
-  - {fileID: 8919269142913034796, guid: a1d820571b3baee499c949ac6cd665fc, type: 3}
   Slot: 3
   grid: {fileID: 1024513487}
 --- !u!114 &1224055128
@@ -17395,14 +17382,6 @@ MonoBehaviour:
   heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
   normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
-  wallPrefabs:
-  - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
-  - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
-  - {fileID: 460207090932539890, guid: c882fdffe534a8a47bd06754c0fab756, type: 3}
-  - {fileID: 1295439092551203737, guid: a7cd11ac6642fea4d92a2f62b9a9681f, type: 3}
-  - {fileID: 8428232871397883590, guid: b0d6bfff6c905af498bc62388e38a159, type: 3}
-  - {fileID: 6868792755218884013, guid: 7261acb51a35ac844920b4b4554b6aa6, type: 3}
-  - {fileID: 8919269142913034796, guid: a1d820571b3baee499c949ac6cd665fc, type: 3}
   Slot: 4
   grid: {fileID: 1024513487}
 --- !u!114 &1649393920
