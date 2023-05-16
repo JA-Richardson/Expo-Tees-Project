@@ -1,55 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class WallCardScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public GameObject lightTurretPrefab;
-    public GameObject heavyTurretPrefab;
-    public GameObject normalTurretPrefab;
-    public GameObject standardWallPrefab;
-
-    public static GameObject[] wallPrefabs;
-    private GameObject turretPrefab;
-    private GameObject turretInstance;
-    private bool isPositionValid;
-    private int terrainLayer;
-    public int Slot;
+    public Image blankImage;
+    public Sprite WallCard;
+    int WallCardsRemaining = 3;
     public Grid grid;
+    public GameObject WallTower;
+    private GameObject turretInstance;
+    private int terrainLayer;
+    private bool isPositionValid;
+    bool active = true;
 
+    // Start is called before the first frame update
     void Start()
     {
-        terrainLayer = LayerMask.GetMask("Terrain"); 
+        terrainLayer = LayerMask.GetMask("Terrain");
     }
 
+    // Update is called once per frame
     void Update()
     {
-        switch (GameManager.Instance.showCardSlot(Slot))
+        if(WallCardsRemaining > 0)
         {
-            case 0:
-                turretPrefab = lightTurretPrefab;
-                break;
+            blankImage.enabled = true;
+            blankImage.sprite = WallCard;
+            active = true;
 
-            case 1:
-                turretPrefab = normalTurretPrefab;
-                break;
-
-            case 2:
-                turretPrefab = heavyTurretPrefab;
-                break;
-
-            case 3:
-                turretPrefab = standardWallPrefab;
-                break;
+        }
+        else if (WallCardsRemaining <= 0)
+        {
+            blankImage.enabled = false;
+            active = false;
+            if (GameManager.Instance.CheckRoundEnded())
+            {
+                WallCardsRemaining = 3;
+            }
         }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        turretInstance = Instantiate(turretPrefab);
+        if(active)
+        {
+            turretInstance = Instantiate(WallTower);
+        }
+
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+
         Ray ray = Camera.main.ScreenPointToRay(eventData.position);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, terrainLayer))
@@ -75,20 +80,11 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         if (isPositionValid)
         {
             Vector2Int cellPos = grid.WorldToCell(turretInstance.transform.position);
-           
+
             grid.addObjectToGrid(cellPos, turretInstance);
             grid.SpawnWallIfAdjacent(cellPos);
             turretInstance = null;
-
-            if (GameManager.Instance.howManyCards > 0)
-            {
-                GameManager.Instance.useCard(Slot);
-                GameManager.Instance.howManyCards = GameManager.Instance.howManyCards - 1;
-            }
-            else if (GameManager.Instance.howManyCards <= 0)
-            {
-                gameObject.GetComponent<CardScript>().Slot = 0;
-            }
+            WallCardsRemaining -= 1;
         }
         else
         {
@@ -96,8 +92,6 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             turretInstance = null;
         }
 
-        
     }
-    
-    
+
 }

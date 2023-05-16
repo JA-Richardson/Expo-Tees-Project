@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            handOfCards.Add(Random.Range(0, 4));
+            handOfCards.Add(Random.Range(0, 3));
         }
     }
 
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            handOfCards.Add(Random.Range(0, 4));
+            handOfCards.Add(Random.Range(0, 3));
         }
     }
 
