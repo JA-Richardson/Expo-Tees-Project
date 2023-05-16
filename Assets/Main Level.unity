@@ -19745,9 +19745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4e75ac94e58a345b7c48d4530841ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeavyEnemy: {fileID: 2238310883326427716, guid: a9b777885deef504c9db0b296a535248, type: 3}
-  NormalEnemy: {fileID: 7327836625082879196, guid: de17045a3481511438ed0813c6a6158e, type: 3}
-  LightEnemy: {fileID: 4440262235412080566, guid: 69f74455f956d9a489f2432f972c34ab, type: 3}
+  HeavyEnemy: {fileID: 2095271410635994720, guid: 2ddf644c7ac18bd4d909c5e8c47da049, type: 3}
+  NormalEnemy: {fileID: 3773232399653987091, guid: 86d79d0887aa18e4dac53fde916657fa, type: 3}
+  LightEnemy: {fileID: 1000011593744314, guid: f95e8f2a313d3444da102f0f8b826a60, type: 3}
 --- !u!4 &1824256021
 Transform:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ public class SpawnerScript : MonoBehaviour
         {
             if (coolDownCount == 0)
             {
-                Instantiate(HeavyEnemy, gameObject.transform);
+                Instantiate(NormalEnemy, gameObject.transform);
                 AmountOfEnemiesSpawned++;
                 newRound = false;
             }
