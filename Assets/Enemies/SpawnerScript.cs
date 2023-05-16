@@ -66,7 +66,10 @@ public class SpawnerScript : MonoBehaviour
             GameManager.Instance.roundNumber++;
             AmountOfEnemiesSpawned = 0;
             AmountOfEnemiesToSpawn += 2;
-            coolDown -= 1;
+            if(coolDown >= 3)
+            {
+                coolDown -= 1;
+            }
             newRound = true;
             GameManager.Instance.NewCards();
         }
