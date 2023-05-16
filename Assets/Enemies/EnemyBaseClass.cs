@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyBaseClass : MonoBehaviour
 {
@@ -22,6 +23,17 @@ public class EnemyBaseClass : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void checkCollision()
+    {
+        float distanceToTarget = (target.position - transform.position).magnitude;
+        if (distanceToTarget <= 35)
+        {
+            GameManager.Instance.BaseHealth -= 5;
+            Destroy(gameObject);
+            return;
+        }
     }
 
     public void TakeDamage(int damage)

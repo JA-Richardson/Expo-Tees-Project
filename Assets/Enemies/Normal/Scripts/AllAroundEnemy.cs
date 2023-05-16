@@ -12,6 +12,6 @@ public class AllAroundEnemy : EnemyBaseClass
     // Update is called once per frame
     void Update()
     {
-        
+        checkCollision();
     }
 }

@@ -12,6 +12,6 @@ public class HeavyEnemy : EnemyBaseClass
     // Update is called once per frame
     void Update()
     {
-        
+        checkCollision();
     }
 }
