@@ -6,6 +6,8 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public int playerScore = 0;
+    public int BaseMaxHealth = 100;
+    public int BaseHealth = 100;
     public int howManyCards = 3;
     public TextMeshProUGUI waveNumber;
     public int roundNumber = 1;
