@@ -16,6 +16,10 @@ public class BaseTowerCode : MonoBehaviour
     public float VisAngle = 360f;
     public string enemyTag = "Enemy";
 
+
+    public GameObject bulletPrefab;
+    public Transform Firepoint;
+
     public AudioSource audioSource;
     public AudioClip towerSound;
 
@@ -132,6 +136,13 @@ public class BaseTowerCode : MonoBehaviour
         audioSource.PlayOneShot(towerSound, volume);
         Target.TakeDamage(AttackPower);
         EndOfAttackCooldown = Time.time + AttackSpeed;
+        GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, Firepoint.position, Firepoint.rotation);
+        BulletScript bullet = bulletGo.GetComponent<BulletScript>();
+
+        if (bullet != null)
+        {
+            bullet.Seek(Target.transform);
+        }
     }
 
     //Sets the towers values.
