@@ -56,6 +56,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         {
             turretInstance.transform.position = hit.point;
             Vector3 gridPosition = grid.WorldToGridPosition(hit.point);
+            gridPosition.y -= 5;
             if (grid.IsPositionInGrid(gridPosition) && !grid.IsCellOccupied(gridPosition))
             {
                 turretInstance.transform.position = gridPosition;
@@ -75,6 +76,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         {
             
             Vector2Int cellPos = grid.WorldToCell(turretInstance.transform.position);
+           
             grid.addObjectToGrid(cellPos, turretInstance);
             grid.SpawnWallIfAdjacent(cellPos);
             turretInstance = null;

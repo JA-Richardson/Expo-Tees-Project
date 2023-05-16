@@ -170,7 +170,7 @@ public class Grid : MonoBehaviour
                 float height1 = Terrain.activeTerrain.SampleHeight(CellToWorld(cellPos));
                 float height2 = Terrain.activeTerrain.SampleHeight(adjacentWorldPos);
                 wallPos.y = (height1 + height2) / 2;
-
+                wallPos.y -= 5;
                 // Randomly select a wall prefab
                 GameObject wallPrefab = wallPrefabs[Random.Range(0, wallPrefabs.Length)];
                 GameObject wallInstance = Instantiate(wallPrefab, wallPos, Quaternion.identity);
