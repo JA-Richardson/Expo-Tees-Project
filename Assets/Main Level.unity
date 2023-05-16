@@ -11140,8 +11140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellSize: 20
   gridSize: {x: 20, y: 20}
-  prefab: {fileID: 5417928486187800539, guid: 35533aad9b64a4641affd54b69b5167a, type: 3}
-  cell: {x: 10, y: 15}
+  prefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
+  cell: {x: 10, y: 13}
   wallPrefabs:
   - {fileID: 5266569144634760577, guid: 65c99723b10c10c468614a8fe38c8329, type: 3}
   - {fileID: 7584691084162894049, guid: c052ec911029b82428ac4829816f0c27, type: 3}
