@@ -113,19 +113,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e1f8f6a595b56924ebbbfc5cff1808b4, type: 3}
   m_PrefabInstance: {fileID: 473486741241255691}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &7311632479877597378
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473486741241287083}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!208 &-7897924611851484131
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -269,6 +256,20 @@ MonoBehaviour:
   audioSource: {fileID: -5236435046255581914, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
   towerSound: {fileID: 8300000, guid: f36784724eebc5c4f8da652b2d94812c, type: 3}
   volume: 0.5
+--- !u!136 &766151056974335914
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473486741241287083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 5.66
+  m_Height: 16.94
+  m_Direction: 1
+  m_Center: {x: 0, y: 4, z: 0}
 --- !u!4 &473486741241384331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e1f8f6a595b56924ebbbfc5cff1808b4, type: 3}

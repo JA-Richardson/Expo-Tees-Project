@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 95000011442643512}
   - component: {fileID: -7982579153166333489}
   - component: {fileID: -8615125259158645921}
-  - component: {fileID: 4707402209989654011}
+  - component: {fileID: 5303806912517921105}
   m_Layer: 7
   m_Name: Bat_Red 1
   m_TagString: Enemy
@@ -604,8 +604,8 @@ MonoBehaviour:
   Health: 0
   Speed: 0
   Power: 0
---- !u!65 &4707402209989654011
-BoxCollider:
+--- !u!135 &5303806912517921105
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -615,8 +615,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.03
+  m_Center: {x: 0, y: 0.01, z: 0}
 --- !u!1 &1000011643250032
 GameObject:
   m_ObjectHideFlags: 0
