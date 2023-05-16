@@ -120,7 +120,7 @@ public class Grid : MonoBehaviour
             return;
         }
 
-        if (cell.x >= 0 && cell.x < gridSize.x && cell.y >= 0 && cell.y < gridSize.y)
+        if (cell.x >= 0 && cell.x <= gridSize.x && cell.y >= 0 && cell.y <= gridSize.y)
         {
             if (gridOccupiedObjects == null)
             {
