@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8682210911192998891}
   - component: {fileID: -5520924652466091474}
   - component: {fileID: -5455322843212464799}
+  - component: {fileID: 1025089548679716187}
   m_Layer: 6
   m_Name: Heavy Tower
   m_TagString: Untagged
@@ -130,6 +131,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.027098877, y: 0.027309766, z: 0.191442}
   m_Center: {x: 0, y: 0.00010544758, z: 0.07819399}
+--- !u!208 &1025089548679716187
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2807521650617516568}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.014, y: 0.014, z: 0.096}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.078}
+  m_TimeToStationary: 0.5
 --- !u!1 &7712585618695220372
 GameObject:
   m_ObjectHideFlags: 0

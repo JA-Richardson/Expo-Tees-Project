@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 24395730214843058}
   - component: {fileID: 4614886957800304542}
   - component: {fileID: 3878538317166736981}
+  - component: {fileID: 9097567632047892164}
   m_Layer: 6
   m_Name: Light Tower
   m_TagString: Untagged
@@ -258,3 +259,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &9097567632047892164
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134306290753952533}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.014, y: 0.014, z: 0.096}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.078}
+  m_TimeToStationary: 0.5

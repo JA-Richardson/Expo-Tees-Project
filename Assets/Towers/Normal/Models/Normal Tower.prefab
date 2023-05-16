@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5236435046255581914}
   - component: {fileID: 2848297662481763903}
   - component: {fileID: 6679830667716499828}
+  - component: {fileID: 5749255488200457561}
   m_Layer: 6
   m_Name: Normal Tower
   m_TagString: Untagged
@@ -227,6 +228,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.027098877, y: 0.027309766, z: 0.191442}
   m_Center: {x: 0, y: 0.00010544758, z: 0.07819399}
+--- !u!208 &5749255488200457561
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4737976087552434815}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.014, y: 0.014, z: 0.096}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.078}
+  m_TimeToStationary: 0.5
 --- !u!1 &6278164362950272967
 GameObject:
   m_ObjectHideFlags: 0
