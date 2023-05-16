@@ -7460,9 +7460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010432f113cb93842a4dd4089e14dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
-  heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
-  normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  lightTurretPrefab: {fileID: 9130618051436904887, guid: b20acb77c9c04b4418c0791adf8c4743, type: 3}
+  heavyTurretPrefab: {fileID: 7700269582025690590, guid: ed4dfa1e7ceb928419b0c91690857481, type: 3}
+  normalTurretPrefab: {fileID: 473486741241287083, guid: 09b0cfd2c3c93c749b020e55780be0d5, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   Slot: 1
   grid: {fileID: 1024513487}
@@ -7711,6 +7711,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6062693409792996905, guid: 695261f7cca5d1d48a6b932602bb19ef, type: 3}
   m_PrefabInstance: {fileID: 332974933}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &750130803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750130805}
+  - component: {fileID: 750130804}
+  m_Layer: 0
+  m_Name: Spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &750130804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750130803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4e75ac94e58a345b7c48d4530841ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  HeavyEnemy: {fileID: 2095271410635994720, guid: 2ddf644c7ac18bd4d909c5e8c47da049, type: 3}
+  NormalEnemy: {fileID: 3773232399653987091, guid: 86d79d0887aa18e4dac53fde916657fa, type: 3}
+  LightEnemy: {fileID: 1000011593744314, guid: f95e8f2a313d3444da102f0f8b826a60, type: 3}
+  spawnerLocation: {fileID: 750130805}
+--- !u!4 &750130805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750130803}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 533, y: 79, z: 28.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 146
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &753012754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11811,9 +11860,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010432f113cb93842a4dd4089e14dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
-  heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
-  normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  lightTurretPrefab: {fileID: 9130618051436904887, guid: b20acb77c9c04b4418c0791adf8c4743, type: 3}
+  heavyTurretPrefab: {fileID: 7700269582025690590, guid: ed4dfa1e7ceb928419b0c91690857481, type: 3}
+  normalTurretPrefab: {fileID: 473486741241287083, guid: 09b0cfd2c3c93c749b020e55780be0d5, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   Slot: 2
   grid: {fileID: 1024513487}
@@ -12715,9 +12764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010432f113cb93842a4dd4089e14dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
-  heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
-  normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  lightTurretPrefab: {fileID: 9130618051436904887, guid: b20acb77c9c04b4418c0791adf8c4743, type: 3}
+  heavyTurretPrefab: {fileID: 7700269582025690590, guid: ed4dfa1e7ceb928419b0c91690857481, type: 3}
+  normalTurretPrefab: {fileID: 473486741241287083, guid: 09b0cfd2c3c93c749b020e55780be0d5, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   Slot: 3
   grid: {fileID: 1024513487}
@@ -17378,9 +17427,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010432f113cb93842a4dd4089e14dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightTurretPrefab: {fileID: 9134306290753952533, guid: e341223e6b68ed040ba79b91bcd2d9f8, type: 3}
-  heavyTurretPrefab: {fileID: 2807521650617516568, guid: 487409930b38b7f4da9a643fe2220a4c, type: 3}
-  normalTurretPrefab: {fileID: 4737976087552434815, guid: 76dd094d6bff3c8449335f891dc3d2e8, type: 3}
+  lightTurretPrefab: {fileID: 9130618051436904887, guid: b20acb77c9c04b4418c0791adf8c4743, type: 3}
+  heavyTurretPrefab: {fileID: 7700269582025690590, guid: ed4dfa1e7ceb928419b0c91690857481, type: 3}
+  normalTurretPrefab: {fileID: 473486741241287083, guid: 09b0cfd2c3c93c749b020e55780be0d5, type: 3}
   standardWallPrefab: {fileID: 238838848551066677, guid: 3d658bb1e94047248a3ef109d0b2a0db, type: 3}
   Slot: 4
   grid: {fileID: 1024513487}
@@ -18478,6 +18527,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e42950e66318f9479ae016da36fb6f5, type: 3}
+--- !u!1 &1724784551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724784553}
+  - component: {fileID: 1724784552}
+  m_Layer: 0
+  m_Name: Spawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1724784552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724784551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4e75ac94e58a345b7c48d4530841ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  HeavyEnemy: {fileID: 2095271410635994720, guid: 2ddf644c7ac18bd4d909c5e8c47da049, type: 3}
+  NormalEnemy: {fileID: 3773232399653987091, guid: 86d79d0887aa18e4dac53fde916657fa, type: 3}
+  LightEnemy: {fileID: 1000011593744314, guid: f95e8f2a313d3444da102f0f8b826a60, type: 3}
+  spawnerLocation: {fileID: 1724784553}
+--- !u!4 &1724784553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724784551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 79, z: -277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 147
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1731699234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19745,9 +19843,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4e75ac94e58a345b7c48d4530841ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   HeavyEnemy: {fileID: 2095271410635994720, guid: 2ddf644c7ac18bd4d909c5e8c47da049, type: 3}
   NormalEnemy: {fileID: 3773232399653987091, guid: 86d79d0887aa18e4dac53fde916657fa, type: 3}
   LightEnemy: {fileID: 1000011593744314, guid: f95e8f2a313d3444da102f0f8b826a60, type: 3}
+  spawnerLocation: {fileID: 1824256021}
 --- !u!4 &1824256021
 Transform:
   m_ObjectHideFlags: 0
@@ -19756,7 +19856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824256019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105.1, y: 79, z: 28.1}
+  m_LocalPosition: {x: 20, y: 79, z: -240}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
