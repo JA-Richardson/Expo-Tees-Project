@@ -133,7 +133,7 @@ public class BaseTowerCode : MonoBehaviour
 
     protected void Attack()
     {
-        audioSource.PlayOneShot(towerSound, volume);
+        //audioSource.PlayOneShot(towerSound, volume);
         Target.TakeDamage(AttackPower);
         EndOfAttackCooldown = Time.time + AttackSpeed;
         GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, Firepoint.position, Firepoint.rotation);
